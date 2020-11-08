@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/enter_meters"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/enter_duration"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:background="#F3ECEC"
+        android:ems="10"
+        android:hint="Enter duration(seconds)"
+        android:inputType="number"
+        android:shadowColor="#A18989"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#171515"
+        app:layout_constraintEnd_toEndOf="@+id/enter_distance"
+        app:layout_constraintStart_toStartOf="@+id/enter_distance"
+        app:layout_constraintTop_toBottomOf="@+id/enter_distance" />
+
+    <TextView
+        android:id="@+id/add_record1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ADD RECORD"
+        android:textColor="#FDFBFB"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/enter_distance"
+        android:layout_width="214dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="64dp"
+        android:background="#F3ECEC"
+        android:ems="10"
+        android:hint="Enter distance(meters)"
+        android:inputType="number"
+        android:shadowColor="#A18989"
+        android:textColor="#0E0E0E"
+        android:textColorHint="#171515"
+        app:layout_constraintEnd_toEndOf="@+id/add_record1"
+        app:layout_constraintStart_toStartOf="@+id/add_record1"
+        app:layout_constraintTop_toBottomOf="@+id/add_record1" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="SAVE"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/enter_duration"
+        app:layout_constraintStart_toStartOf="@+id/enter_duration"
+        app:layout_constraintTop_toBottomOf="@+id/enter_duration" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save"
+        app:srcCompat="@drawable/speed_meter" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="91dp"
+        android:layout_height="101dp"
+        app:srcCompat="@drawable/red_cow"
+        tools:layout_editor_absoluteX="313dp"
+        tools:layout_editor_absoluteY="374dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

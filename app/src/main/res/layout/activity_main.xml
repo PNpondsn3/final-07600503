@@ -4,15 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#101010"
     tools:context=".MainActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="405dp"
+        android:layout_height="438dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/over_limit" />
+
     <TextView
+        android:id="@+id/speed_cords"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="24dp"
+        android:text=" SPEED RECORDS"
+        android:textColor="#F4F0F0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOTAL : 0"
+        android:textColor="#FFEB3B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/speed_cords"
+        app:layout_constraintStart_toStartOf="@+id/speed_cords"
+        tools:layout_editor_absoluteY="83dp" />
+
+    <TextView
+        android:id="@+id/over_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OVER LIMIT : 0"
+        android:textColor="#FF0808"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/total"
+        app:layout_constraintStart_toStartOf="@+id/total"
+        tools:layout_editor_absoluteY="139dp" />
+
+    <Button
+        android:id="@+id/add_record"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="ADD RECORD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
